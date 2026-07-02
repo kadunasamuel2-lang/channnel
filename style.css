@@ -212,23 +212,32 @@
 
         .card-img-container {
             width: 100%;
-            padding-top: 100%; /* 1:1 Aspect Ratio */
+            aspect-ratio: 1 / 1; /* Fixed frame regardless of source image shape */
+            padding-top: 100%; /* Fallback for browsers without aspect-ratio support */
             position: relative;
             background: linear-gradient(135deg, #11131a 0%, #0d0f16 100%);
+            overflow: hidden;
         }
 
+        /* object-fit: contain guarantees the ENTIRE image is always visible,
+           no matter its width/height/orientation — nothing gets cropped or
+           cut in half. Unused frame space is filled by the card gradient
+           instead of chopping off part of the picture. */
         .card-img-container img {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
+            image-rendering: auto;
+            padding: 10px;
             transition: var(--transition);
         }
 
         .card:hover .card-img-container img {
-            transform: scale(1.03);
+            transform: scale(1.04);
         }
 
         .card-content {
