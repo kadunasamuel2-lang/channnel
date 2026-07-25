@@ -67,11 +67,23 @@
                 }
             });
 
+            closeMobileNav();
             window.scrollTo({ top: 0, behavior: 'instant' });
         }
 
         window.addEventListener('hashchange', routePage);
         window.addEventListener('load', routePage);
+
+        /**
+         * Mobile Nav Drawer Toggle
+         */
+        function toggleMobileNav() {
+            document.getElementById('mainNav').classList.toggle('open');
+        }
+
+        function closeMobileNav() {
+            document.getElementById('mainNav').classList.remove('open');
+        }
 
         /**
          * Variable Lead Storage
@@ -147,7 +159,7 @@
             const subscriberEmail = document.getElementById('subscriberEmail').value.trim();
 
             currentSubscriberPayload = 
-`--- COUPLING SUBSCRIBER REGISTRATION ---
+`--- VAULTEXPLORER SUBSCRIBER REGISTRATION ---
 👤 Name: ${subscriberName}
 📧 Email: ${subscriberEmail}
 🔑 Requesting: Vault Discount Codes & System Bulletins
