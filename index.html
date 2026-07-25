@@ -18,13 +18,17 @@
     <header class="main-header">
         <div class="nav-container">
             <a href="#home" class="logo">Vault<span>Explorer</span></a>
+            <button class="nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle menu" aria-controls="mainNav" aria-expanded="false">
+                <span class="bars"><span></span><span></span><span></span></span>
+                Menu
+            </button>
             <nav class="nav-links" id="mainNav">
                 <a href="#home" class="nav-item active" data-page="home">Home</a>
                 <a href="#tech" class="nav-item" data-page="tech">Tech</a>
                 <a href="#toys" class="nav-item" data-page="toys">Toys</a>
-                <a href="#books" class="nav-item" data-page="books">Books</a>
-                <a href="#forex" class="nav-item" data-page="forex">Forex</a>
-                <a href="#booking" class="nav-item" data-page="booking">Website Packages</a>
+                <a href="#books" class="nav-item" data-page="books">Books &amp; Guides</a>
+                <a href="#forex" class="nav-item" data-page="forex">Forex Academy</a>
+                <a href="#booking" class="nav-item" data-page="booking">Get A Website</a>
                 <a href="https://webcraft0457.github.io/web-craft-.com/" target="_blank" class="nav-item" style="color: var(--accent-gold);">WebCraft Agency 🌐</a>
                 <a href="#about" class="nav-item" data-page="about">About</a>
                 <a href="#account" class="nav-item" data-page="account">Account <span class="pulse-dot"></span></a>
@@ -39,44 +43,50 @@
     <!-- PAGE VIEW: HOME -->
     <div id="view-home" class="page-view active-view">
         <section class="hero">
-            <h1 class="hero-title">Enter the <span>VaultExplorer</span> Hub</h1>
-            <p class="hero-subtitle">Premium gadgets, structural scale toys, focus PDFs, trading frameworks, and professional design services powered by WebCraft.</p>
+            <h1 class="hero-title">Welcome to <span>VaultExplorer</span></h1>
+            <p class="hero-subtitle">Premium gadgets, scale toys, focus PDFs, trading frameworks, professional website design, and the Creator System — everything in one place.</p>
             <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
                 <a href="#books" class="btn btn-primary">Browse Book Store</a>
+                <a href="https://selar.com/ui824307a8" target="_blank" class="btn btn-primary" style="background-color: var(--accent-green); color: #000;">Get The Creator System</a>
                 <a href="https://webcraft0457.github.io/web-craft-.com/" target="_blank" class="btn btn-secondary" style="border-color: var(--accent-gold); color: var(--accent-gold);">Visit WebCraft Agency Website</a>
+            </div>
+            <div class="trust-strip">
+                <span>⚡ Instant Digital Delivery</span>
+                <span>🔒 Secure Checkout via Selar</span>
+                <span>💬 Direct WhatsApp &amp; Telegram Support</span>
             </div>
         </section>
 
         <section class="container">
-            <h2 class="section-title">Departmental <span>Access</span></h2>
-            <p class="section-subtitle">Select a vault class below to retrieve your curated catalog.</p>
+            <h2 class="section-title">Shop By <span>Category</span></h2>
+            <p class="section-subtitle">Choose a category below to see what's inside.</p>
             <div class="grid">
                 <div class="card">
                     <div class="card-content" style="padding: 25px;">
-                        <h3 class="card-title">🔌 Tech & Gadgets</h3>
-                        <p class="card-description">High-performance solar configurations, ultra-fast charging devices, and clean smart camera apparatuses.</p>
-                        <a href="#tech" class="btn btn-primary btn-full">Unlock Tech Store</a>
+                        <h3 class="card-title">🔌 Tech &amp; Gadgets</h3>
+                        <p class="card-description">Solar power setups, fast-charging devices, and smart camera systems.</p>
+                        <a href="#tech" class="btn btn-primary btn-full">Browse Tech</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content" style="padding: 25px;">
-                        <h3 class="card-title">🧸 Action & Scale Toys</h3>
-                        <p class="card-description">Precision architectural block designs, advanced gyro stabilizer planes, and custom action models.</p>
-                        <a href="#toys" class="btn btn-primary btn-full">Unlock Toys Store</a>
+                        <h3 class="card-title">🧸 Action &amp; Scale Toys</h3>
+                        <p class="card-description">Building block sets, RC planes, and collectible action figures.</p>
+                        <a href="#toys" class="btn btn-primary btn-full">Browse Toys</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content" style="padding: 25px;">
-                        <h3 class="card-title">📚 Blueprints & Books</h3>
-                        <p class="card-description">High-impact self-growth papers ($1 to $5), dynamic history guides, and our custom Python AI engine manual.</p>
-                        <a href="#books" class="btn btn-primary btn-full">Unlock Book Store</a>
+                        <h3 class="card-title">📚 Blueprints &amp; Books</h3>
+                        <p class="card-description">Self-growth papers ($1 to $5), history guides, and the Creator System — our full prompt system for building a channel from zero.</p>
+                        <a href="#books" class="btn btn-primary btn-full">Browse Books &amp; Guides</a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content" style="padding: 25px;">
-                        <h3 class="card-title">📈 Forex & Trading</h3>
-                        <p class="card-description">Institutional trade strategy models, candlestick guides, and completely free Smart Money Concept guides.</p>
-                        <a href="#forex" class="btn btn-primary btn-full">Unlock Trading School</a>
+                        <h3 class="card-title">📈 Forex &amp; Trading</h3>
+                        <p class="card-description">Trade strategy guides, candlestick pattern references, and free Smart Money Concept guides.</p>
+                        <a href="#forex" class="btn btn-primary btn-full">Browse Forex Academy</a>
                     </div>
                 </div>
             </div>
@@ -268,24 +278,24 @@
             </div>
         </section>
 
-        <!-- Section: Premium Studio Guide -->
+        <!-- Section: Featured Flagship Guide -->
         <section class="container" style="padding-bottom: 0; padding-top: 10px;">
-            <h1 class="section-title">Featured <span>Masterclass</span></h1>
-            <p class="section-subtitle">Unlock advanced automation strategies directly from the VaultExplorer labs.</p>
-            <div class="card" style="border-color: var(--accent-gold); max-width: 900px; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap;">
+            <h1 class="section-title">Featured <span>Guide</span></h1>
+            <p class="section-subtitle">Our flagship product — the full system behind our own content, written out so you can run it yourself.</p>
+            <div class="card" style="border-color: var(--accent-green); max-width: 900px; margin: 0 auto; display: flex; flex-direction: row; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 280px; position: relative;">
-                    <span class="badge">PREMIUM</span>
-                    <img loading="lazy" decoding="async" src="course-01-ai-stickman-studio.jpg" alt="Stickman Masterclass" style="width: 100%; height: 100%; object-fit: contain; min-height: 200px;" onerror="showFallback(this, 'AI Python Studio')">
+                    <span class="badge lifetime">LIFETIME ACCESS</span>
+                    <img loading="lazy" decoding="async" src="course-01-creator-system.png" alt="Creator System" style="width: 100%; height: 100%; object-fit: contain; min-height: 200px;" onerror="showFallback(this, 'Creator System')">
                 </div>
                 <div style="flex: 1.2; padding: 30px; display: flex; flex-direction: column; justify-content: center;">
-                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Build a Fully Automated AI Stickman Movie Studio with Python</h2>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">Orchestrate dynamic video rendering arrays. Code custom background rendering processes, compile animation sets, and generate programmatic narration tracks with simple Python models.</p>
+                    <h2 style="font-size: 1.5rem; margin-bottom: 10px;">Creator System — Build A Faceless Channel From Zero</h2>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px;">The exact prompt system and step-by-step guidance behind our own channels — scripts, thumbnails, titles, SEO, and a full image-prompt set, plus channel setup, growth, and how to earn before official monetization. Works for any niche. One-time payment, yours for life.</p>
                     <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-color); padding-top: 15px;">
                         <div>
-                            <span style="font-size: 0.75rem; color: var(--text-secondary); display: block;">INVESTMENT PRICE</span>
-                            <strong style="color: var(--accent-gold); font-size: 1.3rem;">₦30,000</strong>
+                            <span style="font-size: 0.75rem; color: var(--text-secondary); display: block;">ONE-TIME PRICE</span>
+                            <strong style="color: var(--accent-gold); font-size: 1.3rem;">$25 / ₦20,000</strong>
                         </div>
-                        <a href="https://selar.com/va725615vz" target="_blank" class="btn btn-primary">Acquire Program</a>
+                        <a href="https://selar.com/ui824307a8" target="_blank" class="btn btn-primary" style="background-color: var(--accent-green); color: #000;">Get Instant Access</a>
                     </div>
                 </div>
             </div>
@@ -590,7 +600,7 @@
                         <p class="card-description">A structured starter handbook focusing on execution structures, charts, and key emotional controls.</p>
                         <div class="card-meta">
                             <div class="card-price">Premium Blueprint</div>
-                            <a href="https://selar.com/p/17b1f43756?affiliate=rikh" target="_blank" class="btn btn-primary">Aquire Access</a>
+                            <a href="https://selar.com/p/17b1f43756?affiliate=rikh" target="_blank" class="btn btn-primary">Get Access</a>
                         </div>
                     </div>
                 </div>
